@@ -2,18 +2,25 @@
 
 Nesse exercício, você está livre para escolher os nomes para suas variáveis e funções! :smile:
 
+
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+? 
+function sum(a,b){
+  return a + b;
+  }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
 ?
+var mysum= sum (9,4) + 5;
 
 // Qual o valor atualizado dessa variável?
 ?
+18
 
 // Declare uma nova variável, sem valor.
 ?
+var value;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
@@ -21,14 +28,21 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
 Onde VALOR é o novo valor da variável.
 */
 ?
+function adiciona(){
+   value = 10;
+  return 'O valor da variável agora é VALOR' + value;
+}
 
 // Invoque a função criada acima.
 ?
 
+adiciona();
+
 // Qual o retorno da função? (Use comentários de bloco).
 ?
-
+/* O valor da variável agora é 10 */
 /*
+
 Crie uma função com as seguintes características:
 1. A função deve receber 3 argumentos;
 2. Se qualquer um dos três argumentos não estiverem preenchidos, a função deve retornar a string:
@@ -36,19 +50,29 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 ?
+function myFunction(a, b, c){
+  if(a === undefined || b === undefined || c === undefined)
+    return "Preencha todos os valores corretamente!";
+    } else{
+      return (a * b * c) + 2;
+      }
+ }
 
 // Invoque a função criada acima, passando só dois números como argumento.
 ?
+myFunction(4, 2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 ?
+// Preencha todos os valores corretamente!
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
 ?
+myFucntion(4, 2, 1)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 ?
-
+// 10
 /*
 Crie uma função com as seguintes características:
 1. A função deve receber 3 argumentos.
@@ -59,7 +83,26 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 ?
+ function newFunction(x, y, z){
+    if(x !== underfined && y === underfined && z === underfined){
+      return x;
+    } else if(x !===underfined && y !=== underfined && z === underfined){
+        return x + y;
+    } else if(x !===underfined && y !=== underfined && z !=== underfined){
+        return (x + y) / z;
+    } else if(x ===underfined && y === underfined && z === underfined){
+        return false;
+    } else{
+        return null;
+    }
+ }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
 ?
+ newFunction (); // false;
+ newFunction(4) // 4;
+ newFunction(4,2) // 6;
+ newFunction(4,2,2) // 3;
+
+
 ```
