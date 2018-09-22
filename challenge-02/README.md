@@ -68,7 +68,7 @@ myFunction(4, 2);
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
 ?
-myFucntion(4, 2, 1)
+myFunction(4, 2, 1)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 ?
