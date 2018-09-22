@@ -84,13 +84,13 @@ Crie uma função com as seguintes características:
 */
 ?
  function newFunction(x, y, z){
-    if(x !== underfined && y === underfined && z === underfined){
+    if(x !== undefined && y === undefined && z === undefined){
       return x;
-    } else if(x !== underfined && y !== underfined && z === underfined){
+    } else if(x !== undefined && y !== undefined && z === undefined){
         return x + y;
-    } else if(x !== underfined && y !== underfined && z !== underfined){
+    } else if(x !== undefined && y !== undefined && z !== undefined){
         return (x + y) / z;
-    } else if(x === underfined && y === underfined && z === underfined){
+    } else if(x === undefined && y === undefined && z === undefined){
         return false;
     } else{
         return null;
