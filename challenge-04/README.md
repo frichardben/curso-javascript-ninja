@@ -124,8 +124,8 @@ Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
 ?
 
-carro.obeterMarcaModelo = function(){
-    return "Esse carro é um " +  carro.obterMarca() + " " + carro.obterModelo;
+carro.obterMarcaModelo = function(){
+    return 'Esse carro é um ' +  carro.obterMarca() + ' '+ carro.obterModelo() ;
 };
 
 /*
@@ -156,23 +156,37 @@ Qual a cor atual do carro?
 */
 ?
 
+carro.obterCor(); // 'verde'
+
 // Mude a cor do carro para vermelho.
 ?
 
+carro.mudarCor( 'vermelho' );
+
 // E agora, qual a cor do carro?
 ?
+
+carro.obterCor(); // 'vermelho'
 
 // Mude a cor do carro para verde musgo.
 ?
 
+carro.mudarCor( 'verde musgo');
+
 // E agora, qual a cor do carro?
 ?
+
+carro.obterCor(); // 'verde musgo'
 
 // Qual a marca e modelo do carro?
 ?
 
+carro.obterMarcaModelo() // 'Esse carro é um Fiat Uno'
+
 // Adicione 2 pessoas no carro.
 ?
+
+
 
 // Adicione mais 4 pessoas no carro.
 ?
