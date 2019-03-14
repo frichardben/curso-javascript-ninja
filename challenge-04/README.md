@@ -75,7 +75,7 @@ var carro = {
   cor: "verde",
   quantasPortas: 2,
   assentos: 4,
-  quantidadePessoas: 3
+  quantidadePessoas: 0
 };
   
 
@@ -145,6 +145,11 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 citado acima, no lugar de "pessoas".
 */
 ?
+carro.addPessoas = function(numPessoas){
+  var totalPessoas = carro.quantidadePessoas + numPessoas;
+  
+  return 'Já temos ' + totalPessoas + ' pessoas no carro!';
+}
 
 /*
 Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
