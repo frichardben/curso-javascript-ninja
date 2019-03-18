@@ -154,7 +154,7 @@ carro.addPessoas = function(numPessoas){
   }
   
   if( totalPessoas > carro.assentos){
-    var quantasPessoasqueCabem = carro.quantidadePessoas - carro.assentos ;
+    var quantasPessoasqueCabem = carro.assentos  - carro.quantidadePessoas ;
     var pluralOuSingular = quantasPessoasqueCabem === 1 ? 'pessoa' : 'pessoas';
     return "Só cabem mais " + quantasPessoasqueCabem + pluralOuSingular + "!";
   }
