@@ -12,7 +12,7 @@ Crie uma função que receba um array como parâmetro, e retorne esse array.
 // ?
 
 function myFunction(arr) {
-  return arr;
+	return arr;
 }
 
 /*
@@ -30,8 +30,15 @@ segundo parâmetro.
 */
 // ?
 
-function myFunction2(arr,num){
+/*function myFunction2(arr,num){
+	var myarray = ['Richard', 4, null, 'undefined'];
+	return myarray;
+}
 
+console.log(myFunction2()[2]); */ 
+
+function myFunction2(arr, index){
+	return arr[index];
 }
 
 /*
