@@ -4,15 +4,23 @@ Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 */
 // ?
 
+var myarray = [2, 'undefined', null, { a:1 }, function() {}];
+
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
 */
 // ?
 
+function myFunction(arr) {
+  return arr;
+}
+
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
 // ?
+
+console.log(myFunction(myarray)[1]);
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -21,6 +29,10 @@ no primeiro parâmetro. O índice a ser retornado, deve ser o número passado no
 segundo parâmetro.
 */
 // ?
+
+function myFunction2(arr,num){
+
+}
 
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
