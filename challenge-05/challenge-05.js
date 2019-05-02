@@ -46,11 +46,16 @@ Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
 // ?
 
+var array2 = ['Eu',{ a:2 }, function(){}, null, 4];
+
+
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
 // ?
+
+console.log(myFunction2(array2));
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
