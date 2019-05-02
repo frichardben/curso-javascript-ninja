@@ -73,10 +73,33 @@ os livros.
 */
 // ?
 
+function book(bookName){
+    var allBook = {
+        'Estruturas De Dados E Algoritmos Com Javascript - 2ª Edição':{
+            quantidadePaginas: 408,
+            autor: 'Loiane Groner',
+			editora: 'Novatec'
+        },
+		'JavaScript: O Guia Definitivo': {
+			quantidadePaginas: 1080,
+			autor: 'David Flanagan',
+			editora: 'Bookman'
+        },
+		'Eloquente Javascript': {
+			quantidadePaginas = 488,
+			autor: 'Marijn Haverbeke',
+			editora: 'No Starch Press'
+        }
+    }
+	return !bookName ? allBooks : allBooks[bookName];
+}
+
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
 // ?
+
+console.log(myBooks());
 
 /*
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
