@@ -92,34 +92,34 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
 // ?
 function convertToHex(color){
 
-  var toHex;
+  var Hexa;
 
     switch(color){
       case 'red':
-        toHex = '#FF0000';
+        Hexa = '#FF0000';
         break;
 
       case 'blue':
-        toHex = '#0000FF';
+        Hexa = '#0000FF';
         break;
 
       case 'yellow':
-        toHex = '#FFFF00';
+        Hexa = '#FFFF00';
         break;
 
       case 'green':
-        toHex = '#008000';
+        Hexa = '#008000';
         break;
 
       case 'white':
-        toHex = '#FFFFFF';
+        Hexa = '#FFFFFF';
         break;
 
       default:
         return 'Não temos o equivalente hexadecimal para ' + color +'.';
 
   }
-return 'O hexadecimal para a cor '+ color +' é '+ toHex +'.'
+return 'O hexadecimal para a cor '+ color +' é '+ Hexa +'.'
 
 } 
 /*
