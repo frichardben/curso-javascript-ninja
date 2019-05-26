@@ -6,6 +6,9 @@ e imprima o nome desse campeonato no console.
 */
 // ?
 
+var champioship = 'Premier League';
+console.log(chamioship);
+
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
 Os elementos serão nomes de times do campeonato escolhido, e os nomes devem
@@ -14,7 +17,9 @@ desafio.
 */
 // ?
 
-console.log( 'Times que estão participando do campeonato:', teams );
+var teams = ['Manchester United','Chelsea','Liverpool','Tottenham','Arsenal'];
+
+console.log('Times que estão participando do campeonato:', teams); 
 
 /*
 Crie uma função chamada `showTeamPosition` com as seguintes características:
@@ -34,17 +39,43 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
 */
 // ?
 
+/*function showTeamPosition(position){
+
+var ifShowIsTrue = 'O time que está em '+ position +'º lugar é o '+ teams[position - 1]+'.';
+
+var ifShowIsFalse = 'Não temos a informação do time que está nessa posição.';
+
+var showTeamPosition = position && position < 5 ? ifShowIsTrue : ifShowIsFalse;
+
+return showTeamPosition;
+
+} */
+
+function showTeamPosition(position){
+  if(position < 1 || position > 5){
+    'Não temos a informação do time que está nessa posição.';
+  }
+  return 'O time que está em '+ position +'º lugar é o '+ teams[position - 1]+'.';
+
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
 // ?
-
+console.log(showTeamPosition(3));
+console.log(showTeamPosition(1));
+console.log(showTeamPosition(4));
+console.log(showTeamPosition(2));
+console.log(showTeamPosition(6));
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
 // ?
+  var num = 20;
+  while(num < 30){
+    console.log(num++);
+}
 
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
@@ -59,8 +90,46 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     "Não temos o equivalente hexadecimal para [COR]."
 */
 // ?
+function convertToHex(color){
 
+  var toHex;
+
+    switch(color){
+      case 'red':
+        toHex = '#FF0000';
+        break;
+
+      case 'blue':
+        toHex = '#0000FF';
+        break;
+
+      case 'yellow':
+        toHex = '#FFFF00';
+        break;
+
+      case 'green':
+        toHex = '#008000';
+        break;
+
+      case 'white':
+        toHex = '#FFFFFF';
+        break;
+
+      default:
+        return 'Não temos o equivalente hexadecimal para ' + color +'.';
+
+  }
+return 'O hexadecimal para a cor '+ color +' é '+ toHex +'.'
+
+} 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
 // ?
+  
+console.log(convertToHex('red'));
+console.log(convertToHex('yellow'));
+console.log(convertToHex('blue'));
+console.log(convertToHex('green'));
+console.log(convertToHex('white'));
+console.log(convertToHex('black'));
